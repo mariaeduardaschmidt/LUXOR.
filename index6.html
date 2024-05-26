@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luxor Joias - Joias e Relógios de Luxo</title>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    height: 100%;
+    background-color: #fff;
+    color: #462222;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+  }
+
+  header {
+    background-color: #f7ede1;
+    color: #462222;
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  header nav ul {
+    list-style: none;
+  }
+
+  header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  header nav ul li a {
+    text-decoration: none;
+    color: #462222;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+  .destaque {
+    background-color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    color: #462222;
+    flex: 1;
+    margin-top: 80px;
+  }
+
+  .destaque h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 90px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    color: #b08d57;
+  }
+
+  .destaque h1 span {
+    font-family: 'Cormorant Garamond', serif;
+  }
+
+  .destaque p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+  }
+
+  .card {
+    width: calc(33.33% - 40px);
+    margin: 20px;
+    max-width: 450px;
+    min-width: 350px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    text-decoration: none;
+    color: #462222;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.01);
+  }
+
+  .card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .card h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #b08d57;
+  }
+
+  .card p {
+    color: #462222;
+    font-family: 'Lato', sans-serif;
+    text-align: justify center;
+  }
+
+  .botao {
+  display:inline;
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #fff; 
+  color: #462222; 
+  text-decoration: none; 
+  border-radius: 5px; 
+  transition: background-color 0.3s;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.botao:hover {
+  background-color: #fff; 
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px ;
+  }
+
+  footer {
+    background-color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  @media (min-width: 768px) {
+    .card {
+      width: calc(33.33% - 60px);
+      margin: 15px;
+    }
+  }
+</style>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html"><img src="diamond.png" alt="Luxor" style="height: 15px; width: 15px;"></a></li>
+        <li><a href="index2.html">Anéis</a></li>
+        <li><a href="index3.html">Colares</a></li>
+        <li><a href="index4.html">Pulseiras</a></li>
+        <li><a href="index5.html">Brincos</a></li>
+        <li><a href="index6.html">Luxor</a></li>
+        <li><a href="index7.html"><img src="cart.png" alt="Carrinho" style="height: 15px; width: 15px;"></a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="destaque">
+    <h1>Conheça mais sobre nós</h1>
+    <p>Transformamos momentos em jóias, com excelência e autenticidade.</p>
+    <div class="card-container">
+      <a href="https://mariaeduardaschmidt.my.canva.site/maria-eduarda-schmidt" target="_blank" class="card">
+        <img src="duda.png" alt="DUDA">
+        <h2>Maria Eduarda Schmidt</h2>
+        <p>CEO</p>
+      </a>
+      <a href="https://leods4.github.io/W1_Cur_Pes/" target="_blank" class="card">
+        <img src="leonardo.png" alt="LEO">
+        <h2>Leonardo de Oliveira</h2>
+        <p>CEO</p>
+      </a>
+    </div>
+    <div class="botoes">
+      <a href="https://www.google.com/maps/search/joias/@-27.6578056,-48.7400055,13z/data=!3m1!4b1?entry=ttu" class="botao">Encontre Nossas Lojas</a>
+      <a href="https://www.canva.com/design/DAGFnCoq2JM/rebuIdjKf-HbSnEhwHOncg/view?utm_content=DAGFnCoq2JM&utm_campaign=designshare&utm_medium=link&utm_source=editor" class="botao">Cuidados com suas Peças</a>
+      <a href="https://mail.google.com/mail/u/0/#inbox" class="botao">Entre em Contato Conosco</a>
+    </div>
+</section>
+
+  <footer>
+    <p>&copy; 2024 Luxor Joias. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
